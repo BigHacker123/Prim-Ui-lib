@@ -7,7 +7,7 @@ local networkClient = game:GetService("NetworkClient")
 local virtualUser = game:GetService("VirtualUser")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local userInputService = game:GetService("UserInputService")
-local lib = loadstring(game:HttpGet"https://kfordgeneralcontracting.com/u.txt")()
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/killjoyelite67/Prim-Ui-lib/main/uilibPrim.lua")()
 local loadConfig;
 local saveConfig; local fps;
 
