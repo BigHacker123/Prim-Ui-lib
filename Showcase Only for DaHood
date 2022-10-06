@@ -289,7 +289,7 @@ coroutine.wrap(function()
     runService.Heartbeat:Connect(HeartbeatUpdate)
 end)()
 
-local window = lib.init("u-sense", Color3.fromRGB(218, 154, 169), Enum.KeyCode.X)
+local window = lib.init("Primordial", Color3.fromRGB(218, 154, 169), Enum.KeyCode.X)
 local general = window.createTab("general", "rbxassetid://8667132506")
     local aim = general.createSection("aim")
         local silent = aim.createToggle("silent aim", false, "silentaim", function(bool)
@@ -338,7 +338,7 @@ local visuals = window.createTab("visuals", "rbxassetid://8595329857")
                 watermarkLabel.TextColor3 = lib.flags["watermark"]
             end
         end)
-        local watermarktext = ui.createDropdown("watermark name", {"u-sense","gamesense","neverlose","pandora","monolith","cuteware"}, "watermarktext", function(str)
+        local watermarktext = ui.createDropdown("watermark name", {"Primordial"}, "watermarktext", function(str)
             sessionSettings["watermarktext"] = str
             if lib.flags["watermarktext"] ~= "none" then
                 watermarkLabel.Text = lib.flags["watermarktext"].." | "..fps.." fps | "..tostring(math.floor(client.player:GetNetworkPing()*2000)).." ping"
